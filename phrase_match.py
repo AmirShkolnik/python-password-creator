@@ -1,10 +1,9 @@
-def generate_phrase_match():
-    keywords = input("Enter keywords separated by commas: ").split(",")
-    phrase_match_list = [f'"{keyword.strip()}"' for keyword in keywords]
-    
-    print("\nBing Ads Phrase Match Keywords:")
-    for phrase in phrase_match_list:
-        print(phrase)
+print("Please enter 20 keywords, separated by commas:")
+keywords = input().split(',')
 
-# Run the function
-generate_phrase_match()
+quoted_keywords = [f'"{keyword.strip()}"' for keyword in keywords[:20]]
+
+print("\nHere are your 20 quoted keywords:")
+for keyword in quoted_keywords:
+    print(keyword)
+
