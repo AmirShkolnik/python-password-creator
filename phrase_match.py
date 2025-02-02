@@ -1,9 +1,9 @@
-print("Please enter max 30 keywords, separated by commas:")
+print("Please enter max 40 keywords, separated by commas:")
 keywords = input().split(',')
 
-quoted_keywords = [f'"{keyword.strip()}"' for keyword in keywords[:30]]
+quoted_keywords = [f'"{keyword.strip()}"' for keyword in keywords[:40]]
 
-print("\nHere are your 30 quoted keywords:")
+print("\nHere are your 40 quoted keywords:")
 for keyword in quoted_keywords:
     print(keyword)
 
