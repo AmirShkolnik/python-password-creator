@@ -9,15 +9,28 @@ nr_letters = int(input("How many letters would you like in your password?\n"))
 nr_symbols = int(input(f"How many symbols would you like?\n"))
 nr_numbers = int(input(f"How many numbers would you like?\n"))
 
-password = ""
+# password = ""
+
+# for letter in range(0, nr_letters):
+#     password += random.choice(letters)
+
+# for symbol in range(0, nr_symbols):
+#     password += random.choice(symbols)
+
+# for number in range(0, nr_numbers):
+#     password += random.choice(numbers)
+
+# print(password)
+
+password_list = []
 
 for letter in range(0, nr_letters):
-    password += random.choice(letters)
+    password_list += random.choice(letters)
 
 for symbol in range(0, nr_symbols):
-    password += random.choice(symbols)
+    password_list += random.choice(symbols)
 
 for number in range(0, nr_numbers):
-    password += random.choice(numbers)
+    password_list += random.choice(numbers)
 
 print(password)
